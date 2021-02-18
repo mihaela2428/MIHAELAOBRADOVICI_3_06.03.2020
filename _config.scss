@@ -1,0 +1,372 @@
+
+@import 'variables';
+
+@mixin flexbox {
+    display:flex;
+ }
+ @mixin flex-direction($direction){
+ @if $direction == column
+ {
+ -webkit-flex-direction:vertical;
+ -moz-flex-direction:vertical;
+ -ms-flex-direction:column;
+ -webkit-flex-direction:column;
+ flex-direction:column;
+ }
+ @else
+ {
+ -webkit-flex-direction:horizontal;
+ -moz-flex-direction:horizontal;
+ -ms-flex-direction:row;
+ -webkit-flex-direction:row;
+ flex-direction:row;
+ }
+ }
+ @mixin flex($properties) {
+    @if $properties == 'flex' {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+    } @else if $properties == 'inline-flex' {
+        display: -ms-inline-flexbox;
+        display: -webkit-inline-flex;
+        display: inline-flex;
+    }
+}
+@mixin flex($properties) {
+    @if $properties == 'flex' {
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+    } @else if $properties == 'inline-flex' {
+        display: -ms-inline-flexbox;
+        display: -webkit-inline-flex;
+        display: inline-flex;
+    }
+}
+
+@mixin flex_direction($properties) {
+    -webkit-flex-direction: $properties;
+    -ms-flex-direction: $properties;
+    flex-direction: $properties;
+}
+
+@mixin flex_wrap($properties) {
+    @if $properties == 'nowrap' {
+        -webkit-flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    } @else if $properties == 'wrap' {
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    } @else if $properties == 'wrap-reverse' {
+        -webkit-flex-wrap: wrap-reverse;
+        -ms-flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
+    }
+}
+
+@mixin flex_justify($properties) {
+    @if $properties == 'flex-start' {
+        -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+        justify-content: flex-start;
+    } @else if $properties == 'flex-end' {
+        -webkit-justify-content: flex-end;
+        -ms-flex-pack: end;
+        justify-content: flex-end;
+    } @else if $properties == 'center' {
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    } @else if $properties == 'space-between' {
+        -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    } @else if $properties == 'space-around' {
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+}
+
+@mixin flex_align_content($properties) {
+    @if $properties == 'flex-start' {
+        -webkit-align-content: flex-start;
+        -ms-flex-line-pack: start;
+        align-content: flex-start;
+    } @else if $properties == 'flex-end' {
+        -webkit-align-content: flex-end;
+        -ms-flex-line-pack: end;
+        align-content: flex-end;
+    } @else if $properties == 'center' {
+        -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
+    } @else if $properties == 'space-between' {
+        -webkit-align-content: space-between;
+        -ms-flex-line-pack: justify;
+        align-content: space-between;
+    } @else if $properties == 'space-around' {
+        -webkit-align-content: space-around;
+        -ms-flex-line-pack: distribute;
+        align-content: space-around;
+    } @else if $properties == 'stretch' {
+        -webkit-align-content: stretch;
+        -ms-flex-line-pack: stretch;
+        align-content: stretch;
+    }
+}
+
+@mixin flex_align_items($properties) {
+    @if $properties == 'flex-start' {
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+    } @else if $properties == 'flex-end' {
+        -webkit-align-items: flex-end;
+        -ms-flex-align: end;
+        align-items: flex-end;
+    } @else if $properties == 'center' {
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+    } @else if $properties == 'baseline' {
+        -webkit-align-items: baseline;
+        -ms-flex-align: baseline;
+        align-items: baseline;
+    } @else if $properties == 'stretch' {
+        -webkit-align-items: stretch;
+        -ms-flex-align: stretch;
+        align-items: stretch;
+    }
+}
+
+@mixin flex_align_self($properties) {
+    @if $properties == 'auto' {
+        -webkit-align-self: auto;
+        -ms-flex-item-align: auto;
+        align-self: auto;
+    } @else if $properties == 'flex-start' {
+        -webkit-align-self: flex-start;
+        -ms-flex-item-align: start;
+        align-self: flex-start;
+    } @else if $properties == 'flex-end' {
+        -webkit-align-self: flex-end;
+        -ms-flex-item-align: end;
+        align-self: flex-end;
+    } @else if $properties == 'center' {
+        -webkit-align-self: center;
+        -ms-flex-item-align: center;
+        align-self: center;
+    } @else if $properties == 'baseline' {
+        -webkit-align-self: baseline;
+        -ms-flex-item-align: baseline;
+        align-self: baseline;
+    } @else if $properties == 'stretch' {
+        -webkit-align-self: stretch;
+        -ms-flex-item-align: stretch;
+        align-self: stretch;
+    }
+}
+
+@mixin flex_order($properties) {
+    -webkit-order: $properties;
+    -ms-flex-order: $properties;
+    order: $properties;
+}
+
+@mixin flex_grow($properties) {
+    -webkit-flex-grow: $properties;
+    -ms-flex-positive: $properties;
+    flex-grow: $properties;
+}
+
+@mixin flex_shrink($properties) {
+    -webkit-flex-shrink: $properties;
+    -ms-flex-negative: $properties;
+    flex-shrink: $properties;
+}
+
+@mixin flex_basis($properties) {
+    -webkit-flex-basis: $properties;
+    flex-basis: $properties;
+}
+
+@mixin flex_center() {
+    @include flex(flex);
+    @include flex_align_items(center);
+    @include flex_justify(center);
+}
+
+@mixin number_front{
+    content: '1';
+    @include flex_center;
+    position: absolute;
+    left: -12px;
+    width: 24px;
+    height: 24px;
+    color: $white-color;
+    background-color: $primary-color;
+    border-radius: 50px;
+}
+
+@mixin heart{
+    .heart_shape {
+        width: $size_heart;
+        height: $size_heart;
+        position: relative;
+        transform: rotate(-45deg);
+        border: $border_heart solid $color_heart;
+        border-radius: $size_heart/50;
+        border-top-color: transparent;
+        border-right-color: transparent;
+        float: right;
+        top: -32px;
+        &:before, &:after {
+          content: '';
+          width: $size_heart;
+          height: $size_heart;
+          border-radius: 50%;
+          position: absolute;
+          border: $border_heart solid $color_heart;
+          border-bottom-color: transparent;
+          border-right-color: transparent;
+        }
+        &:before {
+          top: -$size_heart/2;
+          left: -$border_heart;
+          transform: rotate(45deg);
+        }
+        &:after {
+          top: -$border_heart;
+          left: $size_heart/2 - $border_heart*2;
+          transform: rotate(135deg);
+        }
+        &:hover{
+            background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+            &:before, &:after {
+                background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+            }
+        }
+}
+}
+/*pages mixin*/
+@mixin container--style{
+
+   .text_acc_container{
+    background-color: $white-color;
+    padding: 20px 12px;
+    position: relative;
+    box-shadow: 0px 1px 14px -7px #000000;
+    border-radius: 15px;
+    overflow: hidden;
+    position: relative;
+    .checkmark {
+        width: 60px;
+        background-color: #99e2d0;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: -60px;
+
+        .fa-check-circle {
+            display: flex;
+            justify-content: center;
+            padding-top: 28px;
+            color: $white-color;
+            transition: all 0.5s;
+         -webkit-font-smoothing: antialiased;
+        transform: rotateY(180deg);
+        }
+    }
+    &:hover .checkmark{
+        transform: translateX(-60px);
+        transition: 1s;
+    }   
+    .price{
+        padding-right: 60px;
+    }
+   }
+
+}
+@mixin category--style{
+    .category_name{
+     text-transform: uppercase;
+    font-weight: 300;
+    color: $black-color;
+    position: relative;
+    margin-top: 30px;
+    &:after{
+        content:'';
+        display: block;
+        background-color: $mint-color;
+        width: 40px;
+        height: 2px;
+        margin-top: 7px;
+        margin-bottom: 14px;
+    }
+}
+}
+@mixin grid--containers--style {
+    @include flexbox;
+    @include flex-direction(column);
+    gap: 25px;
+
+}
+@mixin button--style{
+    color: white;
+    background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+    padding: 20px;
+    max-width: 181px;
+    margin: 0 auto;
+    border-radius: 25px;
+    font-weight: bold !important;
+    margin-top: 30px;
+    text-align: center;
+    &:hover{
+        box-shadow: 0px 1px 14px -1px #000000;
+    }
+}
+@mixin banner-style{
+    width: 100%;
+    height: 280px;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: absolute;
+    z-index: -999;
+}
+
+@mixin body--style{
+   .menu_display{
+     background: $grey-background;
+    padding: 40px 13px;
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    margin-top: 220px
+   }
+}
+@mixin course--text--style{
+    .text_acc_container{
+        @include flexbox;
+        @include flex-direction(row);
+        @include flex_wrap(wrap);
+
+    }
+    .course_text{
+        @include flex_grow(1);
+        h3{
+            font-size: 15px;
+            margin-bottom: 5px;
+        }
+        p{
+            font-size: 12px;
+        }
+    }
+    .price {
+        @include flex_align_self(flex-end);
+    }
+}

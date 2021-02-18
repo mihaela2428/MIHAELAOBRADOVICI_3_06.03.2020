@@ -1,0 +1,25 @@
+
+@import 'variables';
+
+footer{
+    background: #353535;
+    padding: 27px;
+    @include flexbox;
+    @include  flex-direction(column);
+    h1 {
+        font-family: 'Shrikhand', cursive;
+        font-size: 18px;
+        color: $white-color;
+        font-weight: 300;
+        padding-bottom: 20px;
+    }
+    a{
+        color: $white-color;   
+        line-height: 1.5;
+        font-size: 14px;
+    }
+    .fas{
+        padding-right: 12px;
+    }
+
+}

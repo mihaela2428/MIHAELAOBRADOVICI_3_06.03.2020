@@ -1,0 +1,79 @@
+@import 'config';
+@import 'footer';
+
+
+
+.oma_page_gourmand, .oma_page_bastille, .oma_page_fullpallete, .oma_page_enchantedplate{
+
+
+.oma_header{
+
+    @include flexbox;
+    @include flex-direction(row);
+    @include flex-center;
+    gap: 50px;
+    .oma_logo{
+        width: 70%;
+        padding: 20px 0;
+    }
+}
+    @include category--style;
+    @include container--style;
+    @include heart;
+    @include body--style;
+    @include course--text--style;
+    .menu_conatiner{
+        @include grid--containers--style;
+        margin-bottom: 30px;
+    }
+    .btn{
+        @include button--style;
+    }
+    .cont_title {
+        position: relative;
+        h1{
+            font-family: 'Shrikhand', cursive;
+            font-size: 25px;
+            position: relative;
+            letter-spacing: 1px;
+        }
+    }
+    .heart_shape{
+        position: absolute  !important;
+        top: 7px  !important;
+        right: 30px  !important;
+    }
+    .oma_banner{
+        @include banner-style;
+        background-image: url(images/restaurants/theGourmand.jpg);
+    }
+
+    @keyframes TransitionIn {
+        from{
+            opacity: 0;
+ 
+        }
+        to{
+            opacity: 1;
+            transition: all .25s ease-in-out;
+
+        }
+        
+    }
+    .text_acc_container{
+        animation: TransitionIn 1s;
+
+        &:nth-of-type(n+1){
+     animation: TransitionIn 2s;
+
+    }
+        &:nth-of-type(n+2){
+        animation: TransitionIn 3s;
+ 
+    }
+    &:nth-of-type(n+3){
+        animation: TransitionIn 3.5s;
+    }
+
+    }
+}

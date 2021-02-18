@@ -1,0 +1,1021 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap");
+/*pages mixin*/
+/*pages mixin*/
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap");
+footer {
+  background: #353535;
+  padding: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+footer h1 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+
+footer a {
+  color: #fff;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+footer .fas {
+  padding-right: 12px;
+}
+
+.oma_page header {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+
+.oma_page header .location_status {
+  background-color: #eaeaea;
+  margin: 0;
+  padding: 15px 0;
+}
+
+.oma_page .book_restaurant {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 50px;
+}
+
+.oma_page .book_restaurant_explore h2 {
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.oma_page .book_restaurant_explore p {
+  font-weight: 300;
+}
+
+.oma_page .book_restaurant_explore_btn {
+  color: white;
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
+  background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  padding: 20px;
+  max-width: 181px;
+  margin: 0 auto;
+  border-radius: 25px;
+  font-weight: bold !important;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.oma_page .book_restaurant_explore_btn:hover {
+  -webkit-box-shadow: 0px 1px 14px -1px #000000;
+          box-shadow: 0px 1px 14px -1px #000000;
+}
+
+.how_it_works {
+  padding: 50px 17px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  gap: 25px;
+}
+
+.how_it_works_cont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f6f6f6;
+  color: #000;
+  font-weight: bold;
+  width: 90%;
+  margin: 0 auto;
+  gap: 25px;
+  -webkit-box-shadow: 0px 1px 14px -7px #000000;
+          box-shadow: 0px 1px 14px -7px #000000;
+  padding: 20px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.how_it_works_cont:before, .how_it_works_cont2:before, .how_it_works_cont3:before {
+  content: '1';
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: -12px;
+  width: 24px;
+  height: 24px;
+  color: #fff;
+  background-color: #9356DC;
+  border-radius: 50px;
+}
+
+.how_it_works_cont2:before {
+  content: "2" !important;
+}
+
+.how_it_works_cont3:before {
+  content: "3" !important;
+}
+
+.how_it_works_cont .fas {
+  color: grey;
+  padding-left: 10px;
+}
+
+.how_it_works_cont .fa-store {
+  color: #9356DC;
+}
+
+.restaurant {
+  background-color: #f2f2f2;
+  padding: 60px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  gap: 17px;
+}
+
+.restaurant_cont {
+  -webkit-box-shadow: 0px 1px 14px -7px #000000;
+          box-shadow: 0px 1px 14px -7px #000000;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.restaurant_cont .img_acc_container {
+  width: 330px;
+  height: 170px;
+  margin: 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: relative;
+}
+
+.restaurant_cont .img_acc_container:after {
+  content: 'New';
+  display: block;
+  width: 80px;
+  position: absolute;
+  top: 13px;
+  right: 13px;
+  background: #99e2d0;
+  text-align: center;
+  padding: 5px;
+  border-radius: 3px;
+  color: #139273;
+  font-family: 'Roboto';
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.restaurant_cont4 .img_acc_container:after, .restaurant_cont3 .img_acc_container:after {
+  display: none  !important;
+}
+
+.restaurant_cont .text_acc_container {
+  background-color: #fff;
+  padding: 20px 12px;
+  position: relative;
+}
+
+.restaurant_cont .text_acc_container h3 {
+  margin: 0;
+}
+
+.restaurant_cont .text_acc_container p {
+  padding-top: 5px;
+}
+
+.restaurant_cont .text_acc_container .heart_shape {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border: 1px solid #000;
+  border-radius: 0.3px;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  float: right;
+  top: -32px;
+}
+
+.restaurant_cont .text_acc_container .heart_shape:before, .restaurant_cont .text_acc_container .heart_shape:after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  border: 1px solid #000;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+
+.restaurant_cont .text_acc_container .heart_shape:before {
+  top: -7.5px;
+  left: -1px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.restaurant_cont .text_acc_container .heart_shape:after {
+  top: -1px;
+  left: 5.5px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.restaurant_cont .text_acc_container .heart_shape:hover {
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
+  background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+}
+
+.restaurant_cont .text_acc_container .heart_shape:hover:before, .restaurant_cont .text_acc_container .heart_shape:hover:after {
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
+  background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+}
+
+.restaurant .restaurant_cont1 .img_acc_container {
+  background-image: url("images/restaurants/theFullPallete.jpg");
+}
+
+.restaurant .restaurant_cont2 .img_acc_container {
+  background-image: url("images/restaurants/theEnchantedPlate.jpg");
+}
+
+.restaurant .restaurant_cont3 .img_acc_container {
+  background-image: url("images/restaurants/Bastille.jpg");
+}
+
+.restaurant .restaurant_cont4 .img_acc_container {
+  background-image: url("images/restaurants/theGourmand.jpg");
+}
+
+/*pages mixin*/
+footer {
+  background: #353535;
+  padding: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+footer h1 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+
+footer a {
+  color: #fff;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+footer .fas {
+  padding-right: 12px;
+}
+
+.oma_page_gourmand .oma_header, .oma_page_bastille .oma_header, .oma_page_fullpallete .oma_header, .oma_page_enchantedplate .oma_header {
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  gap: 50px;
+}
+
+.oma_page_gourmand .oma_header .oma_logo, .oma_page_bastille .oma_header .oma_logo, .oma_page_fullpallete .oma_header .oma_logo, .oma_page_enchantedplate .oma_header .oma_logo {
+  width: 70%;
+  padding: 20px 0;
+}
+
+.oma_page_gourmand .category_name, .oma_page_bastille .category_name, .oma_page_fullpallete .category_name, .oma_page_enchantedplate .category_name {
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #000;
+  position: relative;
+  margin-top: 30px;
+}
+
+.oma_page_gourmand .category_name:after, .oma_page_bastille .category_name:after, .oma_page_fullpallete .category_name:after, .oma_page_enchantedplate .category_name:after {
+  content: '';
+  display: block;
+  background-color: #99e2d0;
+  width: 40px;
+  height: 2px;
+  margin-top: 7px;
+  margin-bottom: 14px;
+}
+
+.oma_page_gourmand .text_acc_container, .oma_page_bastille .text_acc_container, .oma_page_fullpallete .text_acc_container, .oma_page_enchantedplate .text_acc_container {
+  background-color: #fff;
+  padding: 20px 12px;
+  position: relative;
+  -webkit-box-shadow: 0px 1px 14px -7px #000000;
+          box-shadow: 0px 1px 14px -7px #000000;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.oma_page_gourmand .text_acc_container .checkmark, .oma_page_bastille .text_acc_container .checkmark, .oma_page_fullpallete .text_acc_container .checkmark, .oma_page_enchantedplate .text_acc_container .checkmark {
+  width: 60px;
+  background-color: #99e2d0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -60px;
+}
+
+.oma_page_gourmand .text_acc_container .checkmark .fa-check-circle, .oma_page_bastille .text_acc_container .checkmark .fa-check-circle, .oma_page_fullpallete .text_acc_container .checkmark .fa-check-circle, .oma_page_enchantedplate .text_acc_container .checkmark .fa-check-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 28px;
+  color: #fff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.oma_page_gourmand .text_acc_container:hover .checkmark, .oma_page_bastille .text_acc_container:hover .checkmark, .oma_page_fullpallete .text_acc_container:hover .checkmark, .oma_page_enchantedplate .text_acc_container:hover .checkmark {
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.oma_page_gourmand .text_acc_container .price, .oma_page_bastille .text_acc_container .price, .oma_page_fullpallete .text_acc_container .price, .oma_page_enchantedplate .text_acc_container .price {
+  padding-right: 60px;
+}
+
+.oma_page_gourmand .heart_shape, .oma_page_bastille .heart_shape, .oma_page_fullpallete .heart_shape, .oma_page_enchantedplate .heart_shape {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border: 1px solid #000;
+  border-radius: 0.3px;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  float: right;
+  top: -32px;
+}
+
+.oma_page_gourmand .heart_shape:before, .oma_page_gourmand .heart_shape:after, .oma_page_bastille .heart_shape:before, .oma_page_bastille .heart_shape:after, .oma_page_fullpallete .heart_shape:before, .oma_page_fullpallete .heart_shape:after, .oma_page_enchantedplate .heart_shape:before, .oma_page_enchantedplate .heart_shape:after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  border: 1px solid #000;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+
+.oma_page_gourmand .heart_shape:before, .oma_page_bastille .heart_shape:before, .oma_page_fullpallete .heart_shape:before, .oma_page_enchantedplate .heart_shape:before {
+  top: -7.5px;
+  left: -1px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.oma_page_gourmand .heart_shape:after, .oma_page_bastille .heart_shape:after, .oma_page_fullpallete .heart_shape:after, .oma_page_enchantedplate .heart_shape:after {
+  top: -1px;
+  left: 5.5px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.oma_page_gourmand .heart_shape:hover, .oma_page_bastille .heart_shape:hover, .oma_page_fullpallete .heart_shape:hover, .oma_page_enchantedplate .heart_shape:hover {
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
+  background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+}
+
+.oma_page_gourmand .heart_shape:hover:before, .oma_page_gourmand .heart_shape:hover:after, .oma_page_bastille .heart_shape:hover:before, .oma_page_bastille .heart_shape:hover:after, .oma_page_fullpallete .heart_shape:hover:before, .oma_page_fullpallete .heart_shape:hover:after, .oma_page_enchantedplate .heart_shape:hover:before, .oma_page_enchantedplate .heart_shape:hover:after {
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
+  background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+}
+
+.oma_page_gourmand .menu_display, .oma_page_bastille .menu_display, .oma_page_fullpallete .menu_display, .oma_page_enchantedplate .menu_display {
+  background: #f6f6f6;
+  padding: 40px 13px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  margin-top: 220px;
+}
+
+.oma_page_gourmand .text_acc_container, .oma_page_bastille .text_acc_container, .oma_page_fullpallete .text_acc_container, .oma_page_enchantedplate .text_acc_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.oma_page_gourmand .course_text, .oma_page_bastille .course_text, .oma_page_fullpallete .course_text, .oma_page_enchantedplate .course_text {
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+}
+
+.oma_page_gourmand .course_text h3, .oma_page_bastille .course_text h3, .oma_page_fullpallete .course_text h3, .oma_page_enchantedplate .course_text h3 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.oma_page_gourmand .course_text p, .oma_page_bastille .course_text p, .oma_page_fullpallete .course_text p, .oma_page_enchantedplate .course_text p {
+  font-size: 12px;
+}
+
+.oma_page_gourmand .price, .oma_page_bastille .price, .oma_page_fullpallete .price, .oma_page_enchantedplate .price {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+
+.oma_page_gourmand .menu_conatiner, .oma_page_bastille .menu_conatiner, .oma_page_fullpallete .menu_conatiner, .oma_page_enchantedplate .menu_conatiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.oma_page_gourmand .btn, .oma_page_bastille .btn, .oma_page_fullpallete .btn, .oma_page_enchantedplate .btn {
+  color: white;
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
+  background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  padding: 20px;
+  max-width: 181px;
+  margin: 0 auto;
+  border-radius: 25px;
+  font-weight: bold !important;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.oma_page_gourmand .btn:hover, .oma_page_bastille .btn:hover, .oma_page_fullpallete .btn:hover, .oma_page_enchantedplate .btn:hover {
+  -webkit-box-shadow: 0px 1px 14px -1px #000000;
+          box-shadow: 0px 1px 14px -1px #000000;
+}
+
+.oma_page_gourmand .cont_title, .oma_page_bastille .cont_title, .oma_page_fullpallete .cont_title, .oma_page_enchantedplate .cont_title {
+  position: relative;
+}
+
+.oma_page_gourmand .cont_title h1, .oma_page_bastille .cont_title h1, .oma_page_fullpallete .cont_title h1, .oma_page_enchantedplate .cont_title h1 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 25px;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+.oma_page_gourmand .heart_shape, .oma_page_bastille .heart_shape, .oma_page_fullpallete .heart_shape, .oma_page_enchantedplate .heart_shape {
+  position: absolute  !important;
+  top: 7px  !important;
+  right: 30px  !important;
+}
+
+.oma_page_gourmand .oma_banner, .oma_page_bastille .oma_banner, .oma_page_fullpallete .oma_banner, .oma_page_enchantedplate .oma_banner {
+  width: 100%;
+  height: 280px;
+  margin: 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  z-index: -999;
+  background-image: url(images/restaurants/theGourmand.jpg);
+}
+
+@-webkit-keyframes TransitionIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+  }
+}
+
+@keyframes TransitionIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+  }
+}
+
+.oma_page_gourmand .text_acc_container, .oma_page_bastille .text_acc_container, .oma_page_fullpallete .text_acc_container, .oma_page_enchantedplate .text_acc_container {
+  -webkit-animation: TransitionIn 1s;
+          animation: TransitionIn 1s;
+}
+
+.oma_page_gourmand .text_acc_container:nth-of-type(n+1), .oma_page_bastille .text_acc_container:nth-of-type(n+1), .oma_page_fullpallete .text_acc_container:nth-of-type(n+1), .oma_page_enchantedplate .text_acc_container:nth-of-type(n+1) {
+  -webkit-animation: TransitionIn 2s;
+          animation: TransitionIn 2s;
+}
+
+.oma_page_gourmand .text_acc_container:nth-of-type(n+2), .oma_page_bastille .text_acc_container:nth-of-type(n+2), .oma_page_fullpallete .text_acc_container:nth-of-type(n+2), .oma_page_enchantedplate .text_acc_container:nth-of-type(n+2) {
+  -webkit-animation: TransitionIn 3s;
+          animation: TransitionIn 3s;
+}
+
+.oma_page_gourmand .text_acc_container:nth-of-type(n+3), .oma_page_bastille .text_acc_container:nth-of-type(n+3), .oma_page_fullpallete .text_acc_container:nth-of-type(n+3), .oma_page_enchantedplate .text_acc_container:nth-of-type(n+3) {
+  -webkit-animation: TransitionIn 3.5s;
+          animation: TransitionIn 3.5s;
+}
+
+/*pages mixin*/
+footer {
+  background: #353535;
+  padding: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+footer h1 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+
+footer a {
+  color: #fff;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+footer .fas {
+  padding-right: 12px;
+}
+
+/*pages mixin*/
+footer {
+  background: #353535;
+  padding: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+footer h1 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+
+footer a {
+  color: #fff;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+footer .fas {
+  padding-right: 12px;
+}
+
+.oma_page_gourmand .oma_header, .oma_page_bastille .oma_header, .oma_page_fullpallete .oma_header, .oma_page_enchantedplate .oma_header {
+  display: -webkit-box;
+  display: flex;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  gap: 50px;
+}
+
+.oma_page_gourmand .oma_header .oma_logo, .oma_page_bastille .oma_header .oma_logo, .oma_page_fullpallete .oma_header .oma_logo, .oma_page_enchantedplate .oma_header .oma_logo {
+  width: 70%;
+  padding: 20px 0;
+}
+
+.oma_page_gourmand .category_name, .oma_page_bastille .category_name, .oma_page_fullpallete .category_name, .oma_page_enchantedplate .category_name {
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #000;
+  position: relative;
+  margin-top: 30px;
+}
+
+.oma_page_gourmand .category_name:after, .oma_page_bastille .category_name:after, .oma_page_fullpallete .category_name:after, .oma_page_enchantedplate .category_name:after {
+  content: '';
+  display: block;
+  background-color: #99e2d0;
+  width: 40px;
+  height: 2px;
+  margin-top: 7px;
+  margin-bottom: 14px;
+}
+
+.oma_page_gourmand .text_acc_container, .oma_page_bastille .text_acc_container, .oma_page_fullpallete .text_acc_container, .oma_page_enchantedplate .text_acc_container {
+  background-color: #fff;
+  padding: 20px 12px;
+  position: relative;
+  -webkit-box-shadow: 0px 1px 14px -7px #000000;
+          box-shadow: 0px 1px 14px -7px #000000;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+}
+
+.oma_page_gourmand .text_acc_container .checkmark, .oma_page_bastille .text_acc_container .checkmark, .oma_page_fullpallete .text_acc_container .checkmark, .oma_page_enchantedplate .text_acc_container .checkmark {
+  width: 60px;
+  background-color: #99e2d0;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -60px;
+}
+
+.oma_page_gourmand .text_acc_container .checkmark .fa-check-circle, .oma_page_bastille .text_acc_container .checkmark .fa-check-circle, .oma_page_fullpallete .text_acc_container .checkmark .fa-check-circle, .oma_page_enchantedplate .text_acc_container .checkmark .fa-check-circle {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 28px;
+  color: #fff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+}
+
+.oma_page_gourmand .text_acc_container:hover .checkmark, .oma_page_bastille .text_acc_container:hover .checkmark, .oma_page_fullpallete .text_acc_container:hover .checkmark, .oma_page_enchantedplate .text_acc_container:hover .checkmark {
+  -webkit-transform: translateX(-60px);
+          transform: translateX(-60px);
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.oma_page_gourmand .text_acc_container .price, .oma_page_bastille .text_acc_container .price, .oma_page_fullpallete .text_acc_container .price, .oma_page_enchantedplate .text_acc_container .price {
+  padding-right: 60px;
+}
+
+.oma_page_gourmand .heart_shape, .oma_page_bastille .heart_shape, .oma_page_fullpallete .heart_shape, .oma_page_enchantedplate .heart_shape {
+  width: 15px;
+  height: 15px;
+  position: relative;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  border: 1px solid #000;
+  border-radius: 0.3px;
+  border-top-color: transparent;
+  border-right-color: transparent;
+  float: right;
+  top: -32px;
+}
+
+.oma_page_gourmand .heart_shape:before, .oma_page_gourmand .heart_shape:after, .oma_page_bastille .heart_shape:before, .oma_page_bastille .heart_shape:after, .oma_page_fullpallete .heart_shape:before, .oma_page_fullpallete .heart_shape:after, .oma_page_enchantedplate .heart_shape:before, .oma_page_enchantedplate .heart_shape:after {
+  content: '';
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  position: absolute;
+  border: 1px solid #000;
+  border-bottom-color: transparent;
+  border-right-color: transparent;
+}
+
+.oma_page_gourmand .heart_shape:before, .oma_page_bastille .heart_shape:before, .oma_page_fullpallete .heart_shape:before, .oma_page_enchantedplate .heart_shape:before {
+  top: -7.5px;
+  left: -1px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.oma_page_gourmand .heart_shape:after, .oma_page_bastille .heart_shape:after, .oma_page_fullpallete .heart_shape:after, .oma_page_enchantedplate .heart_shape:after {
+  top: -1px;
+  left: 5.5px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+.oma_page_gourmand .heart_shape:hover, .oma_page_bastille .heart_shape:hover, .oma_page_fullpallete .heart_shape:hover, .oma_page_enchantedplate .heart_shape:hover {
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
+  background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+}
+
+.oma_page_gourmand .heart_shape:hover:before, .oma_page_gourmand .heart_shape:hover:after, .oma_page_bastille .heart_shape:hover:before, .oma_page_bastille .heart_shape:hover:after, .oma_page_fullpallete .heart_shape:hover:before, .oma_page_fullpallete .heart_shape:hover:after, .oma_page_enchantedplate .heart_shape:hover:before, .oma_page_enchantedplate .heart_shape:hover:after {
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
+  background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+}
+
+.oma_page_gourmand .menu_display, .oma_page_bastille .menu_display, .oma_page_fullpallete .menu_display, .oma_page_enchantedplate .menu_display {
+  background: #f6f6f6;
+  padding: 40px 13px;
+  border-top-right-radius: 50px;
+  border-top-left-radius: 50px;
+  margin-top: 220px;
+}
+
+.oma_page_gourmand .text_acc_container, .oma_page_bastille .text_acc_container, .oma_page_fullpallete .text_acc_container, .oma_page_enchantedplate .text_acc_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.oma_page_gourmand .course_text, .oma_page_bastille .course_text, .oma_page_fullpallete .course_text, .oma_page_enchantedplate .course_text {
+  -ms-flex-positive: 1;
+  -webkit-box-flex: 1;
+          flex-grow: 1;
+}
+
+.oma_page_gourmand .course_text h3, .oma_page_bastille .course_text h3, .oma_page_fullpallete .course_text h3, .oma_page_enchantedplate .course_text h3 {
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.oma_page_gourmand .course_text p, .oma_page_bastille .course_text p, .oma_page_fullpallete .course_text p, .oma_page_enchantedplate .course_text p {
+  font-size: 12px;
+}
+
+.oma_page_gourmand .price, .oma_page_bastille .price, .oma_page_fullpallete .price, .oma_page_enchantedplate .price {
+  -webkit-align-self: flex-end;
+  -ms-flex-item-align: end;
+  align-self: flex-end;
+}
+
+.oma_page_gourmand .menu_conatiner, .oma_page_bastille .menu_conatiner, .oma_page_fullpallete .menu_conatiner, .oma_page_enchantedplate .menu_conatiner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  gap: 25px;
+  margin-bottom: 30px;
+}
+
+.oma_page_gourmand .btn, .oma_page_bastille .btn, .oma_page_fullpallete .btn, .oma_page_enchantedplate .btn {
+  color: white;
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#9356dc), color-stop(#b35cdc), color-stop(#cf64dc), color-stop(#e86edb), to(#ff79da));
+  background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
+  padding: 20px;
+  max-width: 181px;
+  margin: 0 auto;
+  border-radius: 25px;
+  font-weight: bold !important;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.oma_page_gourmand .btn:hover, .oma_page_bastille .btn:hover, .oma_page_fullpallete .btn:hover, .oma_page_enchantedplate .btn:hover {
+  -webkit-box-shadow: 0px 1px 14px -1px #000000;
+          box-shadow: 0px 1px 14px -1px #000000;
+}
+
+.oma_page_gourmand .cont_title, .oma_page_bastille .cont_title, .oma_page_fullpallete .cont_title, .oma_page_enchantedplate .cont_title {
+  position: relative;
+}
+
+.oma_page_gourmand .cont_title h1, .oma_page_bastille .cont_title h1, .oma_page_fullpallete .cont_title h1, .oma_page_enchantedplate .cont_title h1 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 25px;
+  position: relative;
+  letter-spacing: 1px;
+}
+
+.oma_page_gourmand .heart_shape, .oma_page_bastille .heart_shape, .oma_page_fullpallete .heart_shape, .oma_page_enchantedplate .heart_shape {
+  position: absolute  !important;
+  top: 7px  !important;
+  right: 30px  !important;
+}
+
+.oma_page_gourmand .oma_banner, .oma_page_bastille .oma_banner, .oma_page_fullpallete .oma_banner, .oma_page_enchantedplate .oma_banner {
+  width: 100%;
+  height: 280px;
+  margin: 0 auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  z-index: -999;
+  background-image: url(images/restaurants/theGourmand.jpg);
+}
+
+@keyframes TransitionIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+  }
+}
+
+.oma_page_gourmand .text_acc_container, .oma_page_bastille .text_acc_container, .oma_page_fullpallete .text_acc_container, .oma_page_enchantedplate .text_acc_container {
+  -webkit-animation: TransitionIn 1s;
+          animation: TransitionIn 1s;
+}
+
+.oma_page_gourmand .text_acc_container:nth-of-type(n+1), .oma_page_bastille .text_acc_container:nth-of-type(n+1), .oma_page_fullpallete .text_acc_container:nth-of-type(n+1), .oma_page_enchantedplate .text_acc_container:nth-of-type(n+1) {
+  -webkit-animation: TransitionIn 2s;
+          animation: TransitionIn 2s;
+}
+
+.oma_page_gourmand .text_acc_container:nth-of-type(n+2), .oma_page_bastille .text_acc_container:nth-of-type(n+2), .oma_page_fullpallete .text_acc_container:nth-of-type(n+2), .oma_page_enchantedplate .text_acc_container:nth-of-type(n+2) {
+  -webkit-animation: TransitionIn 3s;
+          animation: TransitionIn 3s;
+}
+
+.oma_page_gourmand .text_acc_container:nth-of-type(n+3), .oma_page_bastille .text_acc_container:nth-of-type(n+3), .oma_page_fullpallete .text_acc_container:nth-of-type(n+3), .oma_page_enchantedplate .text_acc_container:nth-of-type(n+3) {
+  -webkit-animation: TransitionIn 3.5s;
+          animation: TransitionIn 3.5s;
+}
+
+.oma_page_bastille .oma_banner {
+  background-image: url(images/restaurants/Bastille.jpg);
+}
+
+/*pages mixin*/
+footer {
+  background: #353535;
+  padding: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+footer h1 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+
+footer a {
+  color: #fff;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+footer .fas {
+  padding-right: 12px;
+}
+
+.oma_page_fullpallete .oma_banner {
+  background-image: url(images/restaurants/theFullPallete.jpg);
+}
+
+/*pages mixin*/
+footer {
+  background: #353535;
+  padding: 27px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+
+footer h1 {
+  font-family: 'Shrikhand', cursive;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+  padding-bottom: 20px;
+}
+
+footer a {
+  color: #fff;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+footer .fas {
+  padding-right: 12px;
+}
+
+.oma_page_enchantedplate .oma_banner {
+  background-image: url(images/restaurants/theEnchantedPlate.jpg);
+}
+
+.oma_page, .oma_page_gourmand, .oma_page_bastille, .oma_page_fullpallete, .oma_page_enchantedplate {
+  max-width: 370px;
+  margin: 0 auto;
+  position: relative;
+}
+
+a, p {
+  text-decoration: none;
+  color: #000;
+}
+
+body h2, body p, body h3, footer h2, footer p, footer h3 {
+  font-family: Roboto;
+  line-height: 1;
+}
+
+body h1, body h2, body h3, body p, footer h1, footer h2, footer h3, footer p {
+  margin: 0;
+}
+/*# sourceMappingURL=main.css.map */

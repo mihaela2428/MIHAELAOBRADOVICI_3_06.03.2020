@@ -1,0 +1,153 @@
+@import 'config';
+@import 'footer';
+@import 'variables';
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap');
+
+.oma_page{
+
+    header{
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 0;
+        .location_status {
+            background-color: #eaeaea;
+            margin: 0;
+            padding: 15px 0;
+        }
+    }
+    .book_restaurant{
+        background-color: #f2f2f2;
+        text-align: center;
+        padding: 50px;
+        &_explore{
+            h2{
+                margin:0;
+                margin-bottom: 50px;
+            }
+            p{
+                font-weight: 300;
+            }
+            &_btn{
+                @include button--style;
+            }
+        }
+    }
+}
+.how_it_works{
+    padding: 50px 17px;
+    @include grid--containers--style;
+    &_cont{
+        @include flexbox;
+        @include flex-direction(row);
+        justify-content: left;
+        align-items: center;
+        background-color:$grey-background;
+        color: #000;
+        font-weight: bold;
+        width: 90%;
+        margin: 0 auto;
+        gap: 25px;
+        box-shadow: 0px 1px 14px -7px #000000;
+        padding: 20px;
+        border-radius: 20px;
+        position: relative;
+        &:before, &2:before, &3:before{
+            content: '1';
+            @include flex_center;
+            position: absolute;
+            left: -12px;
+            width: 24px;
+            height: 24px;
+            color: $white-color;
+            background-color: $primary-color;
+            border-radius: 50px;
+        }
+        &2:before{
+            content: '2'!important;
+        }  
+        &3:before{
+            content: '3'!important;
+        }  
+        .fas {
+            color: grey;
+            padding-left: 10px;
+        }
+        .fa-store{
+            color: $primary-color;
+        }
+    }
+    }
+.restaurant{
+    background-color: #f2f2f2;
+    padding: 60px 20px;
+    @include flexbox;
+    @include  flex-direction(column);
+    gap: 17px;
+    &_cont{
+        box-shadow: 0px 1px 14px -7px #000000;
+        border-radius: 15px;
+        overflow: hidden;
+        .img_acc_container{
+            width: 330px;
+            height: 170px;
+            margin: 0 auto;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            position: relative;
+            &:after{
+                content: 'New';
+                display: block;
+                width: 80px;
+                position: absolute;
+                top: 13px;
+                right: 13px;
+                background: #99e2d0;
+                text-align: center;
+                padding: 5px;
+                border-radius: 3px;
+                color: #139273;
+                font-family: 'Roboto';
+                font-weight: 500;
+                font-size: 15px;
+            
+            }
+        }
+        &4 .img_acc_container:after, &3 .img_acc_container:after{
+            display: none  !important;
+        }
+        .text_acc_container{
+            background-color: $white-color;
+            padding: 20px 12px;
+            position: relative;
+            h3{
+                margin: 0;
+            }
+            p{
+                padding-top: 5px;
+            }
+            @include heart;
+              
+         }
+    
+    }
+
+   
+    .restaurant_cont1 .img_acc_container {
+    background-image: url("images/restaurants/theFullPallete.jpg");
+    }
+    .restaurant_cont2 .img_acc_container {
+    background-image: url("images/restaurants/theEnchantedPlate.jpg");
+        }
+    .restaurant_cont3 .img_acc_container {
+     background-image: url("images/restaurants/Bastille.jpg");
+            }
+    .restaurant_cont4 .img_acc_container {
+    background-image: url("images/restaurants/theGourmand.jpg");
+        }
+    
+}
