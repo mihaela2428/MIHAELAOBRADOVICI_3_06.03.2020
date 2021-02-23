@@ -3,21 +3,41 @@
 @import 'variables';
 
 
-
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Shrikhand&display=swap');
 
-.oma_page{
 
+.oma_page{
+  
     header{
         text-align: center;
         padding-top: 20px;
         padding-bottom: 0;
         .location_status {
-            background-color: #eaeaea;
+
             margin: 0;
             padding: 15px 0;
         }
+        .oma_logo{
+            box-shadow:0 40px 50px #dfdfdf;
+            margin-bottom:2px;
+        }
+        .oma_header-container{
+            @include flexbox;
+            @include flex-direction(row);
+            @include flex_wrap(wrap);
+            background-color: #dfdfdf;
+            @include flex_center;
+            gap: 3px;
+        }
+
+    }
+    .text_acc_container {
+       @include flex(flex);
+       @include flex-direction(row);
+       .text_description{
+           width: 90%;
+       }
     }
     .book_restaurant{
         background-color: #f2f2f2;

@@ -36,13 +36,14 @@
             font-size: 25px;
             position: relative;
             letter-spacing: 1px;
+            display: inline-block;
+            width: 90%;
+        }
+        .heart {
+            display: inline-block;
         }
     }
-    .heart_shape{
-        position: absolute  !important;
-        top: 7px  !important;
-        right: 30px  !important;
-    }
+    
     .oma_banner{
         @include banner-style;
         background-image: url(images/restaurants/theGourmand.jpg);

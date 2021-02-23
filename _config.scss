@@ -213,46 +213,65 @@
 }
 
 @mixin heart{
-    .heart_shape {
-        width: $size_heart;
-        height: $size_heart;
+    .coloured-heart{
+        font-size: x-large;
         position: relative;
-        transform: rotate(-45deg);
-        border: $border_heart solid $color_heart;
-        border-radius: $size_heart/50;
-        border-top-color: transparent;
-        border-right-color: transparent;
-        float: right;
-        top: -32px;
-        &:before, &:after {
-          content: '';
-          width: $size_heart;
-          height: $size_heart;
-          border-radius: 50%;
-          position: absolute;
-          border: $border_heart solid $color_heart;
-          border-bottom-color: transparent;
-          border-right-color: transparent;
+        visibility: visible;
+        cursor: pointer;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        font-style: normal;
+        background: -webkit-linear-gradient(#9356dc, #ff79da);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        visibility: hidden;
+       
+    }
+    .border-heart{
+        font-size: x-large; 
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        bottom: 0;
+       
+    }
+    .heart{
+        display: inline-block;
+        position: relative;
+        &:hover .coloured-heart{
+            visibility: visible;
         }
-        &:before {
-          top: -$size_heart/2;
-          left: -$border_heart;
-          transform: rotate(45deg);
+        &:hover .border-heart{
+            visibility: hidden;
         }
-        &:after {
-          top: -$border_heart;
-          left: $size_heart/2 - $border_heart*2;
-          transform: rotate(135deg);
-        }
-        &:hover{
-            background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-            &:before, &:after {
-                background-image: linear-gradient(to left top, #9356dc, #b35cdc, #cf64dc, #e86edb, #ff79da);
-            }
-        }
+    }
+
+    .text_description{
+
+    }
 }
-}
+
 /*pages mixin*/
+.course_text{
+    @include flex_grow(1);
+    h3{
+        font-size: 15px;
+        margin-bottom: 5px;
+        width: 250px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    
+    }
+    p{
+        font-size: 12px;
+        width: 250px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
 @mixin container--style{
 
    .text_acc_container{
@@ -270,23 +289,32 @@
         top: 0;
         bottom: 0;
         right: -60px;
-
         .fa-check-circle {
             display: flex;
             justify-content: center;
             padding-top: 28px;
             color: $white-color;
-            transition: all 0.5s;
-         -webkit-font-smoothing: antialiased;
-        transform: rotateY(180deg);
+            transition:  0.6s ease-out;
         }
+    }
+    &:hover{
+        cursor: pointer;
+    }
+    &:hover .fa-check-circle:before{
+        transform: rotateZ(720deg);
+        transition: 1s;
     }
     &:hover .checkmark{
         transform: translateX(-60px);
-        transition: 1s;
+        transition: 0.5s;
     }   
-    .price{
+    &:hover .price{
         padding-right: 60px;
+        transition: 0.5s;
+    }
+    &:hover  .course_text h3, &:hover  .course_text p{
+        width: 150px;
+        transition: 0.5s;
     }
    }
 
@@ -356,17 +384,36 @@
         @include flex_wrap(wrap);
 
     }
-    .course_text{
-        @include flex_grow(1);
-        h3{
-            font-size: 15px;
-            margin-bottom: 5px;
-        }
-        p{
-            font-size: 12px;
-        }
-    }
+
     .price {
         @include flex_align_self(flex-end);
+    }
+}
+
+
+/*responsive*/
+@mixin media-md{
+    @media screen and (min-width: 768px) {
+        @content;
+    }
+}
+@mixin media-lg{
+    @media screen and (min-width: 1024px) {
+        @content;
+    }
+}
+@mixin media-xl{
+    @media screen and (min-width: 1600px) {
+        @content;
+    }
+}
+@mixin media-xxs{
+    @media screen and (min-width: 420px) {
+        @content;
+    }
+}
+@mixin media-xxxs{
+    @media screen and (max-width: 320px) {
+        @content;
     }
 }

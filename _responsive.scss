@@ -1,0 +1,98 @@
+@include media-lg {
+    .oma_page{
+        max-width: 100%  !important;
+        .restaurant a{
+            width: 30%;
+        }
+        .img_acc_container{
+            width:100%;
+        }
+        .restaurant{
+            position: relative;
+            flex-direction: row;
+            padding: 60px 40px;
+            h2{
+                position: absolute;
+                top: 10px;
+            }
+        }
+        .restaurant_cont  h3{
+            width: auto;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+}
+
+@include media-md{
+    .restaurant h2{
+        position: relative;
+        top: auto;
+    }
+}
+
+@include media-xxs{
+    .oma_page {
+        .book_restaurant{
+            padding: 20px;
+        }
+        h2, h3{
+            font-size: 20px;
+        }
+        p{
+            font-size: 16px;
+        }
+    }
+}
+
+@include media-xxxs{
+    h2, h3{
+        font-size: 18px;
+    }
+    p{
+        font-size: 16px;
+    }
+    .oma_page {
+    .book_restaurant_explore h2 {
+        margin-bottom: 20px!important;
+    }
+    .restaurant{
+        padding: 20px 5px;
+    }
+    .book_restaurant{   
+        padding: 15px;
+     .book_restaurant_explore_btn {
+        padding: 15px  !important;
+    }
+    }
+     .img_acc_container{
+         width: auto;
+     }
+}
+.oma_all_pages {
+    .oma_logo{
+        width: 80% !important;
+        padding: 10px 0 !important;
+    }
+    .oma_banner{
+        height: 200px;
+    }
+    .menu_display{
+        margin-top: 150px;
+    }
+    .cont_title h1{
+        font-size: 22px;
+        letter-spacing: inherit;
+    }
+    .course_text{
+        width:80%;
+     p {
+        width: 100px;
+    }
+    }
+    .heart_shape {
+        right: 10px !important;
+    }
+}
+}
